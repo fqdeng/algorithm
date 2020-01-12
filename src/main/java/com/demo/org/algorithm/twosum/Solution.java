@@ -10,6 +10,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+//TODO explain
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> valueCorrespondPos = new HashMap();

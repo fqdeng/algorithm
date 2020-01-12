@@ -3,6 +3,7 @@ package com.demo.org.algorithm.remove.element;
 import org.junit.Assert;
 import org.junit.Test;
 
+//TODO explain
 public class Solution {
 
     public int removeElement(int[] nums, int val) {

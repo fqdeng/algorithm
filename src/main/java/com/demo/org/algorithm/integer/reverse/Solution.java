@@ -7,6 +7,7 @@ import java.util.Stack;
 //reverse the integer
 public class Solution {
 
+    //wrong 错误 TODO
     public int reverse(int x) {
         int anwser = 0;
         while (x != 0) {

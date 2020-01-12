@@ -18,10 +18,14 @@ public class Solution {
         //low = 0;
         //high = nums.length - 1;
         while (low <= high) {
+            //固定套路 mid 等于首尾相加 / 2  第一轮循环的时候mid就已经指向数组的中间了
             int mid = (low + high) / 2;
+
             if (target > nums[mid]) {
+                //target 在右边
                 low = mid + 1;
             } else if (target < nums[mid]) {
+                //target 在左边
                 high = mid - 1;
             } else {
                 return mid;
