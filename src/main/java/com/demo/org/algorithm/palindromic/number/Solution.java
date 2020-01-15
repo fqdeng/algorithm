@@ -5,14 +5,12 @@ import org.junit.Test;
 
 import java.util.Stack;
 
-//TODO explain
+/**
+ * 回文数字
+ */
 public class Solution {
 
-    /**
-     * 回文字符串
-     * @param x
-     * @return
-     */
+    //总体的思路还是转换成字符串 然后用stack来做掉
     public boolean isPalindrome(int x) {
         String target = String.valueOf(x);
         Stack<Character> stack = new Stack<Character>();
@@ -23,6 +21,7 @@ public class Solution {
         }
         int start = middle;
         if (target.length() % 2 == 1){
+            //这里考虑到数字的长度为奇数 开始比对的位置要再加1
             start++;
         }
         while(!stack.isEmpty()) {

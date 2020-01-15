@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import java.util.List;
 
-//TODO
 public class Solution {
     /**
      * Definition for singly-linked list.

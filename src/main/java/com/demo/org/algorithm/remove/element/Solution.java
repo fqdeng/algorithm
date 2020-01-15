@@ -3,7 +3,10 @@ package com.demo.org.algorithm.remove.element;
 import org.junit.Assert;
 import org.junit.Test;
 
-//TODO explain
+/**
+ * 删除指定的元素
+ * @link https://leetcode-cn.com/problems/remove-element/
+ */
 public class Solution {
 
     public int removeElement(int[] nums, int val) {
@@ -17,13 +20,17 @@ public class Solution {
         int head = 0;
         int tail = nums.length - 1;
         int count = 0;
+
+        //双指针思路
         while (head <= tail) {
             if (nums[head] == val) {
-                // if head's num equals val
+                //如果从头部找到了val目标值
                 while(tail > head && nums[tail] == val){
+                    //从尾巴找到第一个不等于val值的元素
                     tail--;
                     count++;
                 }
+                //然后替换 头尾的两个元素
                 swap(tail, head, nums);
                 tail--;
                 count++;

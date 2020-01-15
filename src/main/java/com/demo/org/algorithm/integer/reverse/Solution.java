@@ -7,22 +7,23 @@ import java.util.Stack;
 //reverse the integer
 public class Solution {
 
-    //wrong 错误 TODO
+    //stack
     public int reverse(int x) {
-        int anwser = 0;
-        while (x != 0) {
-            anwser = anwser * 10 + (x % 10);
-            if (anwser > Integer.MAX_VALUE || anwser < Integer.MIN_VALUE){
-                return 0;
-            }
-            x /= 10;
+        String s = String.valueOf(x);
+        Stack<Character> stack = new Stack<>();
+        for (char ch : s.toCharArray()) {
+            stack.push(ch);
         }
-        return anwser;
+        StringBuilder builder = new StringBuilder();
+        while (!stack.isEmpty()) {
+            builder.append(stack.pop());
+        }
+        return Integer.valueOf(builder.toString()) ;
     }
 
 
     @Test
     public void testReverse() {
-        System.out.println(reverse(1534236469));
+        System.out.println(reverse(15342388));
     }
 }

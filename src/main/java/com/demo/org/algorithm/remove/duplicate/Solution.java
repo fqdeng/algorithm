@@ -4,8 +4,14 @@ package com.demo.org.algorithm.remove.duplicate;
 import org.junit.Assert;
 import org.junit.Test;
 
-//TODO
+/**
+ * 删除数组中的重复元素
+ * @link https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
+ */
 public class Solution {
+
+    //这个方式比较蠢 实际上是每次删除操作 要把所有元素 左移
+    //在时间复杂度上很吃亏
     public int removeDuplicates(int[] nums) {
         int count = 0;
         int same = 0;
@@ -28,6 +34,7 @@ public class Solution {
         return count + 1;
     }
 
+    // 左移所有元素
     private void remove(int[] nums, int index) {
         for (int i = index; i < nums.length; i++) {
             if (i + 1 <= nums.length - 1) {
