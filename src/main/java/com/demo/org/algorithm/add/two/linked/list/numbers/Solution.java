@@ -1,5 +1,7 @@
 package com.demo.org.algorithm.add.two.linked.list.numbers;
 
+import com.demo.org.algorithm.common.model.ListNode;
+
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Stack;
@@ -10,14 +12,7 @@ import java.util.Stack;
 public class Solution {
 
 
-    public class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     //给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储单个数字。将这两数相加会返回一个新的链表。
     //

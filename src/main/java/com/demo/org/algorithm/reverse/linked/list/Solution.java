@@ -1,5 +1,6 @@
 package com.demo.org.algorithm.reverse.linked.list;
 
+import com.demo.org.algorithm.common.model.ListNode;
 import com.google.common.collect.Lists;
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,22 +8,6 @@ import org.junit.Test;
 import java.util.List;
 
 public class Solution {
-    /**
-     * Definition for singly-linked list.
-     * public class ListNode {
-     * int val;
-     * ListNode next;
-     * ListNode(int x) { val = x; }
-     * }
-     */
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
 
     public ListNode reverseList(ListNode head) {

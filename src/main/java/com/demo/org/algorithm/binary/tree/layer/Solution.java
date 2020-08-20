@@ -88,7 +88,8 @@ public class Solution {
         //        1     2
         //      /  \   /  \
         //     3   4   5   6
-        //   null -> layer
+        //    /\  /\  /\  /\
+        //   null layer
 
         TreeNode top = new TreeNode(0);
         top.left = new TreeNode(1);

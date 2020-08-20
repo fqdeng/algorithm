@@ -1,5 +1,6 @@
 package com.demo.org.algorithm.merge.two.sorted.linked.list;
 
+import com.demo.org.algorithm.common.model.ListNode;
 import org.junit.Test;
 
 import java.util.List;
@@ -9,19 +10,7 @@ import java.util.List;
  * @link https://leetcode-cn.com/problems/merge-two-sorted-lists/
  */
 public class Solution {
-    public class ListNode {
-        int val;
-        ListNode next;
 
-        ListNode(int x) {
-            val = x;
-        }
-
-        @Override
-        public String toString() {
-            return String.valueOf(this.val);
-        }
-    }
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) {
