@@ -26,20 +26,20 @@ public class Solution {
     }
 
     private void dfs(TreeNode original, TreeNode cloned) {
-        if (orginal == null) {
+        if (original == null) {
             //当前节点为空 递归终止
             return;
         }
-        if (orginal == target) {
+        if (original == target) {
             //当前节点为找到的节点 递归终止
             this.cloned = cloned;
             return;
         }
-        if (orginal.right != null) {
-            dfs(orginal.right, cloned.right);
+        if (original.right != null) {
+            dfs(original.right, cloned.right);
         }
-        if (orginal.left != null) {
-            dfs(orginal.left, cloned.left);
+        if (original.left != null) {
+            dfs(original.left, cloned.left);
         }
     }
 }
