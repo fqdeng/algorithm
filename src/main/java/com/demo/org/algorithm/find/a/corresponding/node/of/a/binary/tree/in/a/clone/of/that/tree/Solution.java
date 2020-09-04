@@ -25,7 +25,7 @@ public class Solution {
         return this.cloned;
     }
 
-    private void dfs(TreeNode orginal, TreeNode cloned) {
+    private void dfs(TreeNode original, TreeNode cloned) {
         if (orginal == null) {
             //当前节点为空 递归终止
             return;
