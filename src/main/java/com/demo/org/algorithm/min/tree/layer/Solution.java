@@ -1,5 +1,6 @@
 package com.demo.org.algorithm.min.tree.layer;
 
+import com.demo.org.algorithm.common.model.TreeNode;
 import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
@@ -14,15 +15,6 @@ import java.util.Queue;
  */
 public class Solution {
 
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public int minDepth(TreeNode root) {
         if (root == null) {

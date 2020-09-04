@@ -14,15 +14,24 @@ import java.util.List;
  */
 public class Solution {
 
-    //迭代法
-
+    /**
+     * 迭代法的思想是: 先找到次优解 然后再不断找到最优解
+     * 例如公共子串 必然是任意字符串的子串 不断的减少子串长度 就能找到最优解
+     * @param strs
+     * @return
+     */
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {
             return "";
         }
 
-        //先默认第一个为最长公共前缀
+        //使用最短的字符串作为最长的公共前缀
         String result = strs[0];
+        for (String str : strs) {
+            if (str.length() < result.length()) {
+                result = str;
+            }
+        }
         for (int i = 1; i < strs.length; i++) {
             String target = strs[i];
             //迭代后续的每一个字符串 作为target对象 与当前的result进行比对
