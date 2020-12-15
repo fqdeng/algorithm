@@ -1,7 +1,6 @@
 package com.demo.org.algorithm.min.tree.layer;
 
 import com.demo.org.algorithm.common.model.TreeNode;
-import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

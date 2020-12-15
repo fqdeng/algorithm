@@ -1,10 +1,10 @@
 package com.demo.org.algorithm.reverse.linked.list;
 
 import com.demo.org.algorithm.common.model.ListNode;
-import com.google.common.collect.Lists;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
@@ -29,7 +29,7 @@ public class Solution {
     }
 
     private String getListFromLinkedList(ListNode node) {
-        List<Integer> results = Lists.newArrayList();
+        List<Integer> results = new ArrayList<>();
         while (node != null) {
             results.add(node.val);
             node = node.next;

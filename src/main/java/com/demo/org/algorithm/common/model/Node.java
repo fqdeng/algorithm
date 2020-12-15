@@ -1,7 +1,7 @@
 package com.demo.org.algorithm.common.model;
 
-import com.google.common.collect.Lists;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,7 +30,7 @@ public class Node {
     }
 
     protected List<Node> getChildren() {
-        List<Node> nodes = Lists.newArrayList();
+        List<Node> nodes = new ArrayList<>();
         if (left != null) nodes.add(left);
         if (right != null) nodes.add(right);
         return nodes;
