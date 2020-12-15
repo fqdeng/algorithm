@@ -1,4 +1,4 @@
-package com.demo.org.algorithm.quick.sort;
+package com.demo.org.algorithm.quick.sort.v1;
 
 import com.demo.org.algorithm.common.constants.Color;
 import org.junit.Test;
