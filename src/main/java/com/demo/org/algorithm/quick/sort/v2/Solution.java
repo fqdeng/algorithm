@@ -3,7 +3,6 @@ package com.demo.org.algorithm.quick.sort.v2;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
 
 public class Solution {
 
