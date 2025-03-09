@@ -13,7 +13,7 @@ public class Main{
                 in.nextInt();
                 continue;
             }
-            Integer num = in.nextInt();
+            int num = in.nextInt();
             int count = 0;
             while(num >= 2){
                 num = num / 2;
